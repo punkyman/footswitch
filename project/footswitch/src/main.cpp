@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <Keyboard.h>
 
 #define D10 A10 // as pins are the same on layout
 
@@ -6,7 +7,6 @@ static bool s_buttonWasPressed = false;
 
 void setup() {
   pinMode(D10, INPUT);
-  Serial.begin(9600);
 }
 
 void loop() {
@@ -16,7 +16,7 @@ void loop() {
     if(!s_buttonWasPressed)
     {
       s_buttonWasPressed = true;
-        Serial.println("Pressed");
+      Keyboard.write(KEY_F9);
     }
   }
   else
