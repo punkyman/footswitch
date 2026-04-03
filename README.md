@@ -14,7 +14,8 @@ The setup uses a Korg pedal with a 6.35mm mono jack connector, but any equivalen
 
 ## Schematics
 <img src="schematics/breadboard-fotswitch.png" height="400">
-A gerber file may come up at some point to switch from the breadboard to a real PCB.
+
+Out of this breadboard, a PCB design has been made and produced; the gerber file is available [here](schematics/Gerber_footswitch_PCB.zip)
 
 ## Code project
 Made with platformIO, opens up with VSCode and is pre-configured for the pro micro board.
